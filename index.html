@@ -12,9 +12,22 @@
                 display:flex;
                 flex-direction: row;
                 justify-content: start;
+                padding-top: 7px;
+                padding-right: 40px;
+                padding-left: 8px;
             }
             .Gmail{
                 margin-left: auto
+            }
+            .Google-Apps{
+                background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+                background-position: -135px -35px;
+                padding-right: 25px;
+            }
+            .Sign-in{
+                background-color: rgb(26, 75, 160);
+                color: white;
+                font-weight: 700;
             }
             a{
                 text-decoration: none;
@@ -29,8 +42,15 @@
             .search-bar{
                 display: block;
                 margin: -100px auto;
+                width: 500px;
+                height: 30px;
+                border-radius: 20px;
             }
-            
+           h3{
+                display:flex;
+                justify-content: center;
+                padding-top: 100px;
+           }
         </style> 
     </head>
     <main>
@@ -39,7 +59,7 @@
                 <a class="Store" href="">Store</a>
                 <a class="Gmail" href="">Gmail</a>
                 <a class="Images" href="">Images</a>
-                <a class="Google-Apps" href="">Google Apps</a>
+                <a class="Google-Apps" href=""></a>
                 <a class="Sign-in" href="">Sign in</a>   
         </header>
         <body>
@@ -49,6 +69,10 @@
             <h2>
                 <form action=""><input class="search-bar" type="text"></form>
             </h2>
+            <h3>
+                <input style="font-family: Arial, sans-serif;" type="submit" value="Google Search">
+                <input style="font-family: Arial, sans-serif;" type="submit" value="I'm Feeling Lucky">
+            </h3>
         </body>
     </main>
 
