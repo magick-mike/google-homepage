@@ -7,6 +7,15 @@
             main{
                 font-family: arial, sans-serif;
                 font-size: 13px;
+                display: flex;
+                flex-direction: column;
+            }
+            html, body, main{
+                height: 100%;
+            }
+          
+            .Content{
+                flex: 1 0 auto;
             }
             header{
                 display:flex;
@@ -51,6 +60,27 @@
                 justify-content: center;
                 padding-top: 100px;
            }
+           .footer{
+               display:flex;
+               flex-wrap: wrap;
+               margin-top: auto;
+               justify-content: start;
+               background-color: rgb(225, 225, 225);
+               border-bottom-color: black;
+               border-bottom-style: solid;
+               border-bottom-width: 1px;
+           }
+           .Canada{
+               width: 100%;
+               padding-left: 10px;
+               padding-bottom: 10px;
+               border-bottom-color: black;
+               border-bottom-style: solid;
+               border-bottom-width: 1px;
+           }
+           .Privacy{
+               margin-left: auto;
+           }
         </style> 
     </head>
     <main>
@@ -63,16 +93,28 @@
                 <a class="Sign-in" href="">Sign in</a>   
         </header>
         <body>
-            <h1>
-                <img class="logo" src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt= "the google logo"> 
-            </h1>
-            <h2>
-                <form action=""><input class="search-bar" type="text"></form>
-            </h2>
-            <h3>
-                <input style="font-family: Arial, sans-serif;" type="submit" value="Google Search">
-                <input style="font-family: Arial, sans-serif;" type="submit" value="I'm Feeling Lucky">
-            </h3>
+            <div class="Content">
+                <h1>
+                    <img class="logo" src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt= "the google logo"> 
+                </h1>
+                <h2>
+                    <form action=""><input class="search-bar" type="text"></form>
+                </h2>
+                <h3>
+                    <input style="font-family: Arial, sans-serif;" type="submit" value="Google Search">
+                    <input style="font-family: Arial, sans-serif;" type="submit" value="I'm Feeling Lucky">
+                </h3>
+                    <p style="text-align: center;">Google offered in: <a href="">Français</a></p>
+            </div>
+            <div class="footer">
+                <p class="Canada">Canada</p>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+                <a class="Privacy" href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
         </body>
     </main>
 
